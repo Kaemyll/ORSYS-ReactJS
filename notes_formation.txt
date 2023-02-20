@@ -1,0 +1,14 @@
+mdp validation des acquis : eL0CJlpM
+-- https://eval.orsys.fr/
+
+https://emargement.orsys.fr/Home/Emargement
+
+https://myorsys.orsys.fr/StagiaireRes/MesRessources?linkGuid=0101d1c7-5087-4855-91b8-bb78f6b378d8&linkGuidFormation=0101d1c7-5087-4855-91b8-bb78f6b378d8&menu=1
+
+Plugins navigateurs :
+- React Developer Tools
+- Redux DevTools
+
+@babel/cli
+@babel/core
+@babel/preset-env
