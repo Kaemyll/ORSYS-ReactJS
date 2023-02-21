@@ -1,13 +1,18 @@
-import React from 'react'
+import React from "react";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
 export default function Navigation() {
   return (
-    <div>
-        <ul className='navbar'>
-            <li>Accueil</li>
-            <li>CV</li>
-            <li>A propos</li>
-        </ul>
-    </div>
-  )
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Container>
+        <Navbar.Collapse>
+          <Nav className="me-auto text-white">
+            <Nav.Link href="#Home">Accueil</Nav.Link>
+            <Nav.Link href="#CV">CV</Nav.Link>
+            <Nav.Link href="#About">A propos</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }

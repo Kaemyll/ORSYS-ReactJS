@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header className="App-header">
+    <header className="App-header bg-dark">
       <Logo />
       <Navigation />
     </header>
