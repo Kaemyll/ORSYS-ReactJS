@@ -6,6 +6,7 @@ import Clock from './components/Main/Clock';
 import './App.css';
 import { Button } from 'react-bootstrap';
 import { useState } from 'react';
+import Counter from './components/Main/counter/Counter';
 
 function App() {
   const [show, setShow] = useState(true);
@@ -16,6 +17,7 @@ function App() {
         {show ? 'Masquer' : 'Afficher'}</Button>
       {show && <Clock />}
       <Main />
+      <Counter />
       <Footer />
     </div>
   );

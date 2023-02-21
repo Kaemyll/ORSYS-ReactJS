@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Profile from "../Main/Profile";
-import Counter from "../Main/Counter";
+import Profile from "../Main/profile/Profile";
 
 export default function Main() {
   let profileUser = {
@@ -28,7 +27,6 @@ export default function Main() {
         qui in omnis?
       </p>
       <Profile {...profileUser} />
-      <Counter />
     </Container>
   );
 }
