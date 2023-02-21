@@ -1,10 +1,14 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Counter() {
   const [counter, setCounter] = useState(0);
-  console.log(counter);
+  const [color, setColor] = useState("");
+
+  useEffect(() => {
+    setColor(counter > 0 ? "green" : counter < 0 ? "red" : "black");
+  });
 
   const increase = () => {
     setCounter((count) => count + 1);
@@ -16,12 +20,10 @@ export default function Counter() {
     setCounter(0);
   };
 
-  const countColor = counter > 0 ? "green" : counter < 0 ? "red" : "black";
-
   return (
     <div>
       <h3>Compteur</h3>
-      <span className="fw-bold fs-1" style={{ color: countColor }}>
+      <span className="fw-bold fs-1" style={{ color }}>
         {counter}
       </span>
       <div>
