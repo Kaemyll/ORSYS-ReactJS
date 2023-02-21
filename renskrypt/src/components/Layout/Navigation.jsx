@@ -3,7 +3,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 
 export default function Navigation() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="sm">
       <Container>
         <Navbar.Collapse>
           <Nav className="me-auto text-white">
