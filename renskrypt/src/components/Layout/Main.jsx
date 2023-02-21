@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Container } from "react-bootstrap";
 import { useState } from "react";
 import Profile from "../Main/Profile";
+import Counter from "../Main/Counter";
 
 export default function Main() {
   let profileUser = {
@@ -18,13 +19,6 @@ export default function Main() {
     },
   };
 
-  let [color, setColor] = useState("green");
-
-  function changeColor(newColor) {
-    setColor(newColor);
-    console.log(color);
-  }
-
   return (
     <Container className="my-2">
       <h1>Bienvenue sur mon site web !</h1>
@@ -35,10 +29,7 @@ export default function Main() {
         qui in omnis?
       </p>
       <Profile {...profileUser} />
-      <p>Color : {color}</p>
-      <Button onClick={() => changeColor("red")}>Red</Button>
-      <Button onClick={() => changeColor("green")}>Green</Button>
-      <Button onClick={() => changeColor("blue")}>Blue</Button>
+      <Counter />
     </Container>
   );
 }
