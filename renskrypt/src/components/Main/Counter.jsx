@@ -8,7 +8,7 @@ export default function Counter() {
 
   useEffect(() => {
     setColor(counter > 0 ? "green" : counter < 0 ? "red" : "black");
-  });
+  }, [counter]);
 
   const increase = () => {
     setCounter((count) => count + 1);

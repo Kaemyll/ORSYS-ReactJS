@@ -1,6 +1,5 @@
 import React from "react";
-import { Button, Container } from "react-bootstrap";
-import { useState } from "react";
+import { Container } from "react-bootstrap";
 import Profile from "../Main/Profile";
 import Counter from "../Main/Counter";
 
