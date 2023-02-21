@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 export default function Profile({ general, infoAddr }) {
   return (
     <div>
-      <Container className="border rounded me-auto">
+      <Container className="border rounded me-auto justify-content-md-center">
         <ProfileGeneral {...general} />
         <ProfileAddress {...infoAddr} />
       </Container>

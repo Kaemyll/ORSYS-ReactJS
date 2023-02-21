@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App bg-warning">
+    <div>
       <Header />
       <Main />
       <Footer />

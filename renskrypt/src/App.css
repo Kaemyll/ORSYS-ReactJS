@@ -27,36 +27,3 @@
     transform: rotate(360deg);
   }
 }
-
-.navbar {
-  text-decoration: none;
-  display: inline;
-  flex-direction: row;
-}
-
-.navbar ul {
-  float: right;
-  margin: 1em auto;
-}
-
-.navbar li {
-  list-style-type: none;
-  display: inline;
-  padding-left: 25px;
-}
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: lightgrey;
-  color: black;
-  text-align: start;
-}
-
-.footerUl {
-  display: inline;
-  flex-direction: row;
-  text-decoration: dotted;
-}
