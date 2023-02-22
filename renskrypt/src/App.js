@@ -17,7 +17,9 @@ function App() {
         {show ? 'Masquer' : 'Afficher'}</Button>
       {show && <Clock />}
       <Main />
-      <Counter />
+      <Button onClick={() => setShow((show) => !show)}>
+        {show ? 'Masquer' : 'Afficher'}</Button>
+      {show && <Counter />}
       <Footer />
     </div>
   );

@@ -1,8 +1,12 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
+import MBTList from "../Main/list/MBTList";
 import Profile from "../Main/profile/Profile";
+import { useState } from "react";
+import AppleBasket from "../Main/list/AppleBasket";
 
 export default function Main() {
+  const [show, setShow] = useState(true);
   let profileUser = {
     general: {
       nom: "Garnier",
@@ -26,7 +30,12 @@ export default function Main() {
         commodi ipsam, excepturi voluptates, accusantium porro cupiditate fugiat
         qui in omnis?
       </p>
-      <Profile {...profileUser} />
+      <AppleBasket />
+      <MBTList />
+      <Button onClick={() => setShow((show) => !show)}>
+        {show ? "Masquer" : "Afficher"}
+      </Button>
+      {show && <Profile {...profileUser} />}
     </Container>
   );
 }

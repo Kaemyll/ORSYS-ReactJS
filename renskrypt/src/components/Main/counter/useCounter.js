@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function useCounter(initialCounter) {
+export default function useCounter(initialCounter = 0) {
   const [counter, setCounter] = useState(initialCounter);
 
   useEffect(() => {
