@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import Apple from "./Apple";
+import MBT from "./MBT";
 import useCounter from "../counter/useCounter";
 
-export default function AppleBasket() {
+export default function MBTRow() {
   const [listTank, setTankList] = useState([]);
   const { counter, increase } = useCounter();
 
@@ -26,7 +26,7 @@ export default function AppleBasket() {
       <button onClick={addMBT}>Ajouter MBT</button>
       <hr />
       {listTank.map((tank) => (
-        <Apple key={tank.id} tank={tank} deleteMBT={deleteMBT} />
+        <MBT key={tank.id} tank={tank} deleteMBT={deleteMBT} />
       ))}
     </div>
   );

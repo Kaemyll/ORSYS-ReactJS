@@ -1,9 +1,8 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
-import MBTList from "../Main/list/MBTList";
 import Profile from "../Main/profile/Profile";
 import { useState } from "react";
-import AppleBasket from "../Main/list/AppleBasket";
+import MBTRow from "../Main/list/MBTRow";
 
 export default function Main() {
   const [show, setShow] = useState(true);
@@ -30,8 +29,7 @@ export default function Main() {
         commodi ipsam, excepturi voluptates, accusantium porro cupiditate fugiat
         qui in omnis?
       </p>
-      <AppleBasket />
-      <MBTList />
+      <MBTRow />
       <Button onClick={() => setShow((show) => !show)}>
         {show ? "Masquer" : "Afficher"}
       </Button>
