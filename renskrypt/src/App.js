@@ -14,14 +14,14 @@ function App() {
   return (
     <div>
       <Header />
-      <SignUp />
-      <Button onClick={() => setShow((show) => !show)}>
+      {/* <SignUp /> */}
+      {/* <Button onClick={() => setShow((show) => !show)}>
         {show ? 'Masquer' : 'Afficher'}</Button>
-      {show && <Clock />}
+      {show && <Clock />} */}
       <Main />
-      <Button onClick={() => setShow((show) => !show)}>
+      {/* <Button onClick={() => setShow((show) => !show)}>
         {show ? 'Masquer' : 'Afficher'}</Button>
-      {show && <Counter />}
+      {show && <Counter />} */}
       <Footer />
     </div>
   );

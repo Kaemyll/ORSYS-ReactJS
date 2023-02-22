@@ -3,6 +3,7 @@ import { Button, Container } from "react-bootstrap";
 import Profile from "../Main/profile/Profile";
 import { useState } from "react";
 import MBTRow from "../Main/list/MBTRow";
+import Todolist from "../Main/todolist/Todolist";
 
 export default function Main() {
   const [show, setShow] = useState(true);
@@ -23,7 +24,7 @@ export default function Main() {
 
   return (
     <Container className="my-2">
-      <h1>Bienvenue sur mon site web !</h1>
+      {/* <h1>Bienvenue sur mon site web !</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt fuga
         pariatur quo repellat quaerat ipsum beatae odio laborum perferendis
@@ -34,7 +35,8 @@ export default function Main() {
       <Button onClick={() => setShow((show) => !show)}>
         {show ? "Masquer" : "Afficher"}
       </Button>
-      {show && <Profile {...profileUser} />}
+      {show && <Profile {...profileUser} />} */}
+      <Todolist />
     </Container>
   );
 }

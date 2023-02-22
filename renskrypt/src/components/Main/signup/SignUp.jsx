@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useState } from "react";
+import { Form } from "react-bootstrap";
 
 export default function SignUp() {
   const [values, setValues] = useState({
     pseudo: "??",
     password: "password",
     newsletter: false,
-    country: false,
+    country: [1],
   });
+
+  const fileRef = useRef();
 
   const [errors, setErrors] = useState({
     pseudo: "",
@@ -26,6 +29,7 @@ export default function SignUp() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log("Submit !!!");
+    console.log(fileRef);
     fetch("api", {
       method: "POST",
       body: JSON.stringify(values),
@@ -36,7 +40,7 @@ export default function SignUp() {
     <div>
       <h2>Sign up form</h2>
       <hr />
-      <form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="pseudo">Pseudo</label>
           <input
@@ -87,8 +91,11 @@ export default function SignUp() {
             <option value="">Québec</option>
           </select>
         </div>
+        <div>
+          <input type="file" name="" id="avatar" ref={fileRef} />
+        </div>
         <input type="submit" value="Envoyer" />
-      </form>
+      </Form>
     </div>
   );
 }
