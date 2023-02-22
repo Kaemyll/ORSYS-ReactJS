@@ -7,11 +7,18 @@ export default function MBTRow() {
   const [listTank, setTankList] = useState([]);
   const { counter, increase } = useCounter();
 
+  /**
+   * Fonction qui ajoute un élément
+   */
   function addMBT() {
     setTankList([...listTank, { id: counter + 1 }]);
     increase();
   }
 
+  /**
+   * Fonction qui supprime un élément
+   * @param {*} id
+   */
   function deleteMBT(id) {
     // const copy = [...listTank];
     // const index = listTank.findIndex((tank) => tank.id === id);

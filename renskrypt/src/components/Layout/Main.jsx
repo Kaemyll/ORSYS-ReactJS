@@ -6,6 +6,7 @@ import MBTRow from "../Main/list/MBTRow";
 
 export default function Main() {
   const [show, setShow] = useState(true);
+
   let profileUser = {
     general: {
       nom: "Garnier",
